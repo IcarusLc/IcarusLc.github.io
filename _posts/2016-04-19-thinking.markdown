@@ -1,0 +1,49 @@
+---
+layout:     post
+title:      "thinking"
+subtitle:   " 记录一个月的历程"
+date:       2016-04-19 15:19:00
+author:     "Icarus"
+header-img: "img/post-bg-thinking.jpg"
+tags:
+    - 生活
+---
+
+> “一个月了，却还没有进展，有些急人啊”
+
+
+## 前端还是后台？
+
+(css && js && jquery)||(php && linux)  
+
+---
+
+## 正文
+
+**CSS+JS**
+
+我们有几种方式可以隐藏一个元素：
+CSS display的值是none。
+type="hidden"的表单元素。
+宽度和高度都显式设置为0。
+一个祖先元素是隐藏的，该元素是不会在页面上显示
+CSS visibility的值是hidden
+CSS opacity的指是0
+
+div水平居中:
+margin:auto;
+css的方法只适用于有固定尺寸的div，所以到jQuery发挥作用了： 
+$(window).resize(function(){ 
+$('.className').css({ 
+position:'absolute', 
+left: ($(window).width() - $('.className').outerWidth())/2, 
+top: ($(window).height() - $('.className').outerHeight())/2 + $(document).scrollTop() 
+}); 
+}); 
+//初始化函数 
+$(window).resize(); 
+
+---
+纵享荣华尽，到底意难平
+
+—— Icarus.Lc
